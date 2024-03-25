@@ -1,0 +1,133 @@
+
+
+.top-header {
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0; /* Add padding for better spacing */
+}
+
+.list-div {
+    width: 60%;
+    margin: 40px auto 20px auto;
+}
+
+.list-div ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-div ul li {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .list-div ul li:nth-child(2) {
+        display: none;
+    }
+    .list-div ul li:nth-child(3) {
+        display: none;
+    }
+    .list-div ul li:nth-child(4) {
+        display: none;
+    }
+    .list-div ul li:nth-child(5) {
+        display: none;
+    }
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  .nav-wraper {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    align-items: center;
+  }
+  .nav-wraper li {
+    cursor: pointer;
+  }
+  
+  .nav-wraper-btn{
+    display: none;
+  }
+  .menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .nav-wraper-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 83px;
+      right: 38px;
+      /* left: calc(
+        (100% - 85%) / 2
+      );  */
+      width: 25%;
+      background-color: #f1f1f1;
+      border-radius: 2px;
+      padding-bottom: 10px;
+    }
+  
+    .nav-links li {
+      margin: 0;
+      padding: 10px;
+      color: #000;
+      border-bottom: 1px solid #b8b8b8;
+    }
+  
+    .nav-links.collapsed {
+      display: none;
+    }
+    .cta {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  @media (min-width: 701px) {
+    .nav-links {
+      display: flex;
+      justify-content: space-between; /* Adjust this based on your design */
+      width: auto;
+      position: static;
+      background-color: transparent;
+    }
+  
+    .nav-links li {
+      margin: 0;
+      padding: 0 10px;
+      border: none;
+    }
+  }
